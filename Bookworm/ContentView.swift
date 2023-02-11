@@ -32,10 +32,6 @@ struct ContentView: View {
                                     .foregroundColor(book.rating == 1 ? .red : .primary)
                                 Text(book.author ?? "Unknown Author")
                                     .foregroundColor(.secondary)
-                                if let date = book.date {
-                                    Text(date.formatted(date: .abbreviated, time: .omitted))
-                                        .foregroundColor(.secondary)
-                                }
                             }
                         }
                     }
